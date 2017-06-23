@@ -14,14 +14,10 @@ class FlaskTestCase(unittest.TestCase):
 
                                                         def test_correct_content(self):
                                                                     resp = self.app.get('/hello/world')
-                                                                            self.assertEquals(resp.data, '"Bob is the greatest guy!!!!"\n')
+                                                                            self.assertEquals(resp.data, '"Hello World!"\n')
 
                                                                                 def tearDown(self):
                                                                                             pass
 
                                                                                         if __name__ == '__main__':
                                                                                                 unittest.main()
-
-                                                                                                    Contact GitHub API Training Shop Blog About 
-
-
