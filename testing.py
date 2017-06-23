@@ -4,8 +4,9 @@ import unittest
 class FlaskTestCase(unittest.TestCase):
   def setUp(self):
    demoapp.app.config['TESTING'] = True
-    self.app = demoapp.app.test_client()
-      def test_correct_http_response(self):
+   self.app = demoapp.app.test_client()
+   
+   def test_correct_http_response(self):
        resp = self.app.get('/hello/world')
        self.assertEquals(resp.status_code, 200)
        
